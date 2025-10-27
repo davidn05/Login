@@ -1,7 +1,7 @@
 # Sistema de Gestión de Usuarios con Roles y Accesos (RBAC)
 
-Versión: 2.2  
-Archivo principal: `sistema_login_2.2.py`
+Versión: 2.4  
+Archivo principal: `sistema_login_2.4.py`
 
 ---
 
@@ -111,7 +111,7 @@ SOLID mencionado: SRP (servicios separados), OCP/DIP/ISP (contratos e inyección
 ## 10. Ejecución
 
 1. Requisitos: Python 3.10 o superior.
-2. Guardar `sistema_login_2.3.py`.
+2. Guardar `sistema_login_2.4.py`.
 3. Ejecutar:
    ```bash
-   python sistema_login_2.3.py
+   python sistema_login_2.4.py
