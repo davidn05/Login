@@ -95,21 +95,24 @@ Incluye autenticación, autorización, gestión administrativa y auditoría visu
 - Fachada/Singleton: `SistemaRBAC`.
 
 ## 8.1 Principios SOLID aplicados
-Principio	Aplicación
-S - Responsabilidad Única	Cada clase tiene una función específica: Usuario gestiona datos, Rol define permisos y SistemaLogin controla el acceso.
-O - Abierto/Cerrado	Se pueden agregar nuevos roles sin modificar el código existente, solo extendiendo FabricaRoles.
-L - Sustitución de Liskov	Las subclases de Usuario pueden sustituir la clase base sin alterar el funcionamiento.
-I - Segregación de Interfaces	Cada clase define solo los métodos que necesita, sin imponer interfaces innecesarias.
-D - Inversión de Dependencias	SistemaLogin depende de abstracciones (Usuario, Rol) en lugar de implementaciones concretas.
+| Principio                         | Aplicación                                                                                                                    |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **S - Responsabilidad Única**     | Cada clase tiene una función específica: `Usuario` gestiona datos, `Rol` define permisos y `SistemaLogin` controla el acceso. |
+| **O - Abierto/Cerrado**           | Se pueden agregar nuevos roles sin modificar el código existente, solo extendiendo `FabricaRoles`.                            |
+| **L - Sustitución de Liskov**     | Las subclases de `Usuario` pueden sustituir la clase base sin alterar el funcionamiento.                                      |
+| **I - Segregación de Interfaces** | Cada clase define solo los métodos que necesita, sin imponer interfaces innecesarias.                                         |
+| **D - Inversión de Dependencias** | `SistemaLogin` depende de abstracciones (`Usuario`, `Rol`) en lugar de implementaciones concretas.                            |
 
 ## 8.2 Patrones de diseño usados
-Factory Method
+### Factory Method
 Permite crear usuarios o roles según su tipo sin modificar la lógica base
 
-Strategy
+### Strategy
+
 Permite definir políticas de autorización distintas para cada tipo de rol, encapsulando la lógica en estrategias independientes.
 
-Singleton
+### Singleton
+
 El sistema utiliza este patrón en SistemaLogin para asegurar que exista una única instancia durante toda la ejecución.
 
 ---
