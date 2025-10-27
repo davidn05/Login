@@ -5,9 +5,9 @@ Archivo principal: `sistema_login_1.py`
 
 ---
 
-## 1. Descripción general
+## 1. Descripción
 
-El sistema implementa un **login básico con control de acceso por rol**, diseñado bajo principios de **Programación Orientada a Objetos (POO)** y **buenas prácticas de diseño de software**.  
+El sistema implementa un **login básico con control de acceso por rol**, diseñado bajo principios de **Programación Orientada a Objetos (POO)**.  
 Permite autenticar usuarios mediante nombre y contraseña, identificar su rol y mostrar los permisos asociados a ese rol.
 
 El sistema está construido con una **arquitectura MVC (Modelo–Vista–Controlador)** en Python utilizando **Tkinter** para la interfaz gráfica.
