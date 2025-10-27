@@ -80,13 +80,13 @@ Incluye autenticación, autorización, gestión administrativa y auditoría visu
 
 ---
 
-## 7. Segurida
+## 7. Seguridad
 
 - Contraseñas: 1230
 
 ---
 
-## 8. Arquitectura (visión general)
+## 8. Arquitectura
 
 - Dominio: `Usuario`, `Rol`, `Acceso`, `EventoAuditoria`.
 - Aplicación/Servicios: `ServicioAutenticacion`, `ServicioAutorizacion`, `ServicioGestion`, `ServicioAuditoria`.
