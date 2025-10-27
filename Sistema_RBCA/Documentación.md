@@ -18,7 +18,7 @@ Incluye autenticación, autorización, gestión administrativa y auditoría visu
 - Autorizar acciones mediante roles y accesos.
 - Permitir a la administradora crear y administrar usuarios sin modificar código.
 - Registrar y mostrar auditoría en tiempo real.
-- Mantener una arquitectura clara aplicando POO, SOLID y patrones de diseño (mencionados).
+- Mantener una arquitectura clara aplicando POO, SOLID y patrones de diseño.
 
 ---
 
@@ -50,7 +50,7 @@ Incluye autenticación, autorización, gestión administrativa y auditoría visu
 
 ---
 
-## 5. Interfaz (según croquis)
+## 5. Interfaz
 
 - Panel izquierdo: datos del usuario (nombre, usuario, email, roles, accesos) y botón de cerrar sesión.
 - Panel derecho: pestañas
@@ -77,16 +77,12 @@ Incluye autenticación, autorización, gestión administrativa y auditoría visu
 
 ### 6.3 Auditoría
 - Registra logins, creación de usuarios y cambios de accesos.
-- Ejemplo:
 
 ---
 
-## 7. Seguridad (resumen)
+## 7. Segurida
 
-- Contraseñas: hash SHA-256 con sal (en memoria).
-- Sesiones con token temporal en memoria.
-
-Nota: para producción se recomienda bcrypt/argon2, tokens firmados (JWT) y persistencia segura.
+- Contraseñas: 1230
 
 ---
 
@@ -103,21 +99,19 @@ SOLID mencionado: SRP (servicios separados), OCP/DIP/ISP (contratos e inyección
 
 ---
 
-## 9. Criterios de aceptación (resumen)
+## 9. Criterios de aceptación
 
 - La administradora puede crear usuarios con rol y accesos.
-- Puede otorgar y revocar accesos directos.
 - Auditoría visible para quienes posean el acceso.
 - Usuarios sin permisos no ven pestañas restringidas.
 - Mensaje claro en login ante error.
-- Contraseñas hasheadas con sal.
 
 ---
 
 ## 10. Ejecución
 
 1. Requisitos: Python 3.10 o superior.
-2. Guardar `sistema_login_2.2.py`.
+2. Guardar `sistema_login_2.3.py`.
 3. Ejecutar:
    ```bash
-   python sistema_login_2.2.py
+   python sistema_login_2.3.py
