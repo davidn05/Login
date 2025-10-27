@@ -64,7 +64,7 @@ El método `autorizar()` se comporta de manera diferente según el rol del usuar
 | **I - Segregación de Interfaces** | Cada clase define solo los métodos que necesita, sin imponer interfaces innecesarias.                                         |
 | **D - Inversión de Dependencias** | `SistemaLogin` depende de abstracciones (`Usuario`, `Rol`) en lugar de implementaciones concretas.                            |
 
-## 6. Patrones de diseño posibles
+## 6. Patrones de diseño usados
 ### Factory Method
 Permite crear usuarios o roles según su tipo sin modificar la lógica base
 
